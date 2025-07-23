@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ask AroundTally</title>
+  <style>
+    body { font-family: Arial; background-color: #f0f8ff; margin: 0; padding: 0; }
+    header {
+      background-color: #1E90FF;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+    }
+    header h1 { font-size: 20px; font-weight: bold; margin: 0; }
+    header h2 { font-size: 14px; font-weight: bold; margin: 0; }
+    header img {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 40px;
+    }
+    .section { padding: 20px; }
+    .login-box {
+      display: inline-block;
+      width: 45%;
+      background-color: #1E90FF;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 10px;
+      vertical-align: top;
+    }
+    .login-box input { width: 100%; padding: 5px; margin-top: 5px; }
+    .login-box button {
+      margin-top: 10px;
+      width: 100%;
+      background-color: #87CEFA;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .note, .error, .msg {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .error { color: red; }
+    .black-text { color: black; }
+    .logout { position: absolute; top: 10px; right: 20px; }
+    .back-button { margin-top: 20px; display: block; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/White_flower_icon.svg/2048px-White_flower_icon.svg.png" alt="Logo">
+    <div class="logout">Logout</div>
+    <h1>Ask AroundTally</h1>
+    <h2>your complete tally support</h2>
+  </header>
+
+  <div class="section">
+    <p class="black-text">This website is completely for internal purpose only.</p>
+
+    <div class="login-box">
+      <h3>User</h3>
+      <label>User ID:</label>
+      <input type="text" />
+      <label>Password:</label>
+      <input type="password" />
+      <button>Login</button>
+      <div class="error">Incorrect user id or Password</div>
+    </div>
+
+    <div class="login-box">
+      <h3>Admin</h3>
+      <label>User ID:</label>
+      <input type="text" />
+      <label>Password:</label>
+      <input type="password" />
+      <button>Login</button>
+      <div class="note"><a href="#">Register as Admin</a></div>
+      <div class="note"><a href="#">Reset Password</a></div>
+      <div class="error">No Access</div>
+    </div>
+  </div>
+
+  <!-- Placeholder for future sections such as user window, admin panel, suggestion box, Q&A, image viewer etc -->
+
+</body>
+</html>
